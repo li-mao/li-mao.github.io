@@ -30,3 +30,5 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # https://github.com/jekyll/jekyll-archives
 gem 'jekyll-archives'
+
+gem "webrick"
