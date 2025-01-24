@@ -1,0 +1,6 @@
+defaults:
+  - scope:
+      path: "_posts"  # 根目录
+    values:
+      layout: home
+      permalink: /
