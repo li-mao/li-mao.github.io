@@ -9,6 +9,8 @@ nav:
   - RSS=/rss.xml
   - 🔍SEARCH=/search.html
 
+destination: ./docs
+
 # 不要动这个配置：根据tag生成页面
 plugins:
   - jekyll-archives
