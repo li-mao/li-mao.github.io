@@ -1,0 +1,41 @@
+---
+layout: post
+title: "在 Windows PowerShell 下使用 Claude + Kimi"
+date: 2025-08-01 12:00:00 +0800
+tags: [教程, PowerShell, Claude, Kimi]
+---
+
+# 在 Windows PowerShell 下使用 Claude + Kimi
+
+今天记录下如何在 Windows PowerShell 环境下配置 Claude Code 使用 Kimi API。
+
+## 配置步骤
+
+打开 PowerShell 配置文件：
+
+```powershell
+nvim $PROFILE
+```
+
+添加以下环境变量配置：
+
+```powershell
+$env:ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic";
+$env:ANTHROPIC_AUTH_TOKEN="YOUR_MOONSHOT_API_KEY"
+$env:ANTHROPIC_MODEL="kimi-k2-turbo-preview"
+$env:ANTHROPIC_SMALL_FAST_MODEL="kimi-k2-turbo-preview"
+```
+
+## 注意事项
+
+- 将 `YOUR_MOONSHOT_API_KEY` 替换为你的实际 Kimi API 密钥
+- 配置完成后重启 PowerShell 或执行 `. $PROFILE` 使配置生效
+- 确保已安装 Claude Code CLI 工具
+
+## 总结
+
+通过简单的环境变量配置，就可以在 Windows 系统下愉快地使用 Claude Code 配合 Kimi 模型进行开发了。
+
+---
+
+*发布于 2025年8月1日*
